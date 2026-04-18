@@ -1,0 +1,59 @@
+{
+  "model_name": "Model 2: 2D CNN on Mel Spectrograms",
+  "architecture": {
+    "input_shape": [
+      128,
+      79,
+      1
+    ],
+    "conv_blocks": 3,
+    "filters": [
+      32,
+      64,
+      128
+    ],
+    "output": "sigmoid (binary)"
+  },
+  "training": {
+    "n_folds": 5,
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "epochs_max": 100,
+    "train_recordings": 2396,
+    "train_patients": 699
+  },
+  "cv_results": {
+    "mean_auroc": 0.7776352619332915,
+    "std_auroc": 0.08042166304233726,
+    "mean_auprc": 0.624897712534012,
+    "std_auprc": 0.12033131569615266
+  },
+  "threshold": {
+    "method": "f1_optimized",
+    "value": 0.5029923915863037
+  },
+  "test_results": {
+    "recording_level": {
+      "n_recordings": 611,
+      "auroc": 0.7318905771024924,
+      "auprc": 0.6053952038226917,
+      "sensitivity": 0.3170731707317073,
+      "specificity": 0.9959016393442623,
+      "f1": 0.47560975609756095
+    },
+    "patient_level": {
+      "n_patients": 175,
+      "n_positive": 36,
+      "n_negative": 139,
+      "auroc": 0.7398081534772183,
+      "auprc": 0.6261521934807301,
+      "sensitivity": 0.3888888888888889,
+      "specificity": 0.9856115107913669,
+      "f1": 0.5384615384615384,
+      "tp": 14,
+      "fp": 2,
+      "tn": 137,
+      "fn": 22
+    }
+  }
+}
