@@ -1,41 +1,41 @@
 {
   "model": "Model 3: Multi-Modal Fusion (Waveform + Mel Spectrogram)",
   "fusion_type": "attention",
-  "train_samples": 2400,
+  "train_samples": 46733,
   "train_patients": 699,
-  "test_samples": 607,
+  "test_samples": 12275,
   "test_patients": 175,
   "waveform_shape": [
-    20000
+    4000
   ],
   "melspec_shape": [
     64,
-    157
+    63
   ],
-  "cv_auroc_mean": 0.8456845832461596,
-  "cv_auroc_std": 0.04759076616293096,
-  "cv_auprc_mean": 0.7598872609600326,
-  "cv_auprc_std": 0.0724375175189213,
+  "cv_auroc_mean": 0.8735343718102339,
+  "cv_auroc_std": 0.044769184710368407,
+  "cv_auprc_mean": 0.7885747326417829,
+  "cv_auprc_std": 0.06411361606693473,
   "thresholds": {
     "f1_optimized": {
-      "value": 0.8264421820640564,
-      "precision_present": 0.5434782608695652,
-      "recall_present": 0.6944444444444444,
-      "f1_present": 0.6097560975609756,
-      "accuracy": 0.8171428571428572
+      "value": 0.9937548637390137,
+      "precision_present": 0.24817518248175183,
+      "recall_present": 0.9444444444444444,
+      "f1_present": 0.3930635838150289,
+      "accuracy": 0.4
     },
     "recall_optimized": {
-      "value": 0.8259344100952148,
-      "precision_present": 0.5531914893617021,
+      "value": 0.9999998807907104,
+      "precision_present": 0.5909090909090909,
       "recall_present": 0.7222222222222222,
-      "f1_present": 0.6265060240963856,
-      "accuracy": 0.8228571428571428
+      "f1_present": 0.65,
+      "accuracy": 0.84
     }
   },
   "test_metrics": {
-    "auroc": 0.9062749800159873,
-    "auprc": 0.7968531423160764,
-    "sensitivity": 0.6944444444444444,
-    "specificity": 0.8489208633093526
+    "auroc": 0.8299360511590728,
+    "auprc": 0.5462000744153304,
+    "sensitivity": 0.9444444444444444,
+    "specificity": 0.2589928057553957
   }
 }
