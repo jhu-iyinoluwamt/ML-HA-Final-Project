@@ -1,0 +1,41 @@
+{
+  "model": "Model 3: Multi-Modal Fusion (Waveform + Mel Spectrogram)",
+  "fusion_type": "attention",
+  "train_samples": 2400,
+  "train_patients": 699,
+  "test_samples": 607,
+  "test_patients": 175,
+  "waveform_shape": [
+    20000
+  ],
+  "melspec_shape": [
+    64,
+    157
+  ],
+  "cv_auroc_mean": 0.8456845832461596,
+  "cv_auroc_std": 0.04759076616293096,
+  "cv_auprc_mean": 0.7598872609600326,
+  "cv_auprc_std": 0.0724375175189213,
+  "thresholds": {
+    "f1_optimized": {
+      "value": 0.8264421820640564,
+      "precision_present": 0.5434782608695652,
+      "recall_present": 0.6944444444444444,
+      "f1_present": 0.6097560975609756,
+      "accuracy": 0.8171428571428572
+    },
+    "recall_optimized": {
+      "value": 0.8259344100952148,
+      "precision_present": 0.5531914893617021,
+      "recall_present": 0.7222222222222222,
+      "f1_present": 0.6265060240963856,
+      "accuracy": 0.8228571428571428
+    }
+  },
+  "test_metrics": {
+    "auroc": 0.9062749800159873,
+    "auprc": 0.7968531423160764,
+    "sensitivity": 0.6944444444444444,
+    "specificity": 0.8489208633093526
+  }
+}
